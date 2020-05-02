@@ -44,13 +44,16 @@ def game_core_v1(number):
 def score_game(game_core):
     '''Запускаем игру 1000 раз, чтобы узнать, за какое количество попыток в среднем угадывает число'''
     # Создаем список, куда запишем количество попыток для угадывания
-    count_ls = []
+    #count_ls = []
     np.random.seed(1)  # фиксируем RANDOM SEED, чтобы ваш эксперимент был воспроизводим!
     # Угадывать будем из массива, заполненного числами из диапазона 1-100, тысяча чисел
     random_array = np.random.randint(1,101, size=(1000))
     # для каждого числа из массива (случайного) применяем функцию для угадывания
-    for number in random_array:
-        count_ls.append(game_core(number))
+    #for number in random_array:
+    #    count_ls.append(game_core(number))
+    
+    # замапим наш цикл с функцией, применяем функцию к каждому значению из массива
+    count_ls = list(map(game_core, random_array))
     # вычисляем среднее (sum(count_ls)/len(count_ls))
     score = int(np.mean(count_ls))
     print(f"Ваш алгоритм угадывает число в среднем за {score} попыток")
