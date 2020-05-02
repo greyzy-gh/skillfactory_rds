@@ -1,4 +1,5 @@
 import numpy as np
+import time
 #=============================================
 number = np.random.randint(1,101)
 # print(number)
@@ -8,6 +9,8 @@ number = np.random.randint(1,101)
 count = 0
 left, right = 1, 100
 
+# запускаем счетчик
+start = time.time()
 #=============================================
 # идем по пути отбрасывания половины
 while True:
@@ -20,4 +23,5 @@ while True:
         right = current - 1
     count +=1
 #=============================================
-print(count)
+end = time.time()
+print('Потребовалось {} попыток за {} секунд'.format(count, end-start))
