@@ -3,6 +3,8 @@
 # Проект 0. GitHub. Быстрый старт, секция 0.6
 
 import numpy as np
+import os
+import sys
 #=============================================
 #number_secret = np.random.randint(1,101)
 # print(number_secret)
