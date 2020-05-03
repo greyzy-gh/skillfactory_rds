@@ -5,6 +5,10 @@
 import numpy as np
 import os
 import sys
+
+aaa = 'value'
+bbb = 777
+
 #=============================================
 #number_secret = np.random.randint(1,101)
 # print(number_secret)
