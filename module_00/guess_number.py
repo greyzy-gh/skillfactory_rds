@@ -5,6 +5,10 @@
 import numpy as np
 import os
 import sys
+
+#########################################
+aaa = 555
+bbb = 'init'
 #=============================================
 #number_secret = np.random.randint(1,101)
 # print(number_secret)
