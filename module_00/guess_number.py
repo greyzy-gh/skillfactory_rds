@@ -6,9 +6,9 @@ import numpy as np
 import os
 import sys
 
-#########################################
-aaa = 555
-bbb = 'init'
+aaa = 'value'
+bbb = 777
+
 #=============================================
 #number_secret = np.random.randint(1,101)
 # print(number_secret)
